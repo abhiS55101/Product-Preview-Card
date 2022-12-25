@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Fraunces', serif;
+  font-family: 'Montserrat', sans-serif;
+  background-color: hsl(30, 38%, 92%);
+}
+
+.header{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.card-container{
+    border-radius: 18px;
+    /* height: 450px; */
+    height: 29rem;
+    /* width: 690px; */
+    width: 43rem;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.img-container{
+    height: 100%;
+    width: 50%;
+}
+
+img{
+    border-radius: 18px 0 0 18px;
+    height: 29rem;
+    width: 21.4rem;
+}
+
+.card-content{
+    padding: 22px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0 18px 18px 0;
+}
+
+.heading-1{
+    margin: 18px 12px;
+    color: hsl(228, 12%, 48%);
+    font-size: 12px;
+    letter-spacing: 8px;
+}
+
+.heading-2{
+    margin: 10px 0 0 0;
+    padding: 0px 14px;
+    color: hsl(212, 21%, 14%);
+    font-size: 32px;
+    font-family: Fraunces;
+}
+
+.card-text{
+    padding: 10px 12px;
+    font-size: 16px;
+    font-family: Montserrat;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.6;
+}
+.price{
+    display: flex;
+    align-items: center;
+}
+
+.new-price{
+    font-size: 32px;
+    font-family: Fraunces;
+    color: hsl(158, 36%, 37%);
+    padding: 5px 12px;
+}
+
+.old-price{
+    font-size: 16;
+    color: hsl(228, 12%, 48%);
+    margin-left: 25px;
+    text-decoration: line-through;
+}
+
+.btn{
+    height: 50px;
+    width: 270px;
+    margin: 18px 13px;
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+    border: none;
+    color: hsl(0, 0%, 100%);
+    font-size: 16;
+    font-family: Montserrat;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-text{
+    margin-left: 8px;
+}
+
+.btn:hover {
+    background-color: hsl(158, 36%, 20%);
+    cursor: pointer;  
+    transition: 0.3s ease-in-out; 
+}
+
+/* ######## Media Queries ####### */
+
+@media(max-width: 786px) {
+
+    .header{
+        max-width: 100%;
+    }
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 500px;
+    }
+
+    .img-container{
+        width: 340px;
+    }
+
+    .card-content{
+        max-width: 350px;
+        margin-bottom: 50px;
+    }
+}
